@@ -1,0 +1,70 @@
+/* My first CSS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #7D6B7D;
+}
+
+img {
+    border: 10px solid green;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    
+}
+
+h1 {
+    text-align: center;
+    border: 5px dotted blue;
+}
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    text-align: center;
+
+}
+
+cite {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bigbold {
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+span {
+    background-color: rgb(248, 68, 68);
+    font-weight: bold;
+}
+
+.background-p {
+    background-color: rgb(207, 197, 197);
+}
+
+a:link {
+    color: brown;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+}
+a:visited {
+    color: green;
+    font-weight: normal;
+
+}
+
+a:hover {
+    background-color: rgb(216, 213, 213);
+    color: black;
+}
+
+a.harvard {
+    color: lightblue;
+}
+
+/*Interessante caso aqui, pois se eu colocar só .havard essa minha corda azul não irá funcionar, pois não será tão específico e estará perdendo para algum item da lista acima! */

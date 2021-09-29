@@ -1,0 +1,92 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #D9D9D9;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #87A5A5;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px;
+    text-decoration: none;
+    padding: 14px 16px;
+    
+}
+
+.menu a:hover {
+    background-color: #D98F4E;
+}
+
+h1 {
+    text-align: center;
+    border: #D98F4E double;
+    color: #8C3E37;
+    background-color: #87A5A5;
+}
+
+h2 {
+    color: #9c5750;
+    text-transform: capitalize ;
+
+}
+
+.citacao-1{
+    background-color: #bacece;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    padding: 3px;
+    border: dotted 2px;
+}
+
+.citacao-2{
+    background-color: #bacece;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: dotted 2px;
+    padding: 3px;
+    float: right;
+    
+}
+img {
+    width: auto;
+    height: 400px;
+    float: left;
+}
+
+div:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.links a:link {
+    color: cornflowerblue;
+    text-decoration: none; 
+}
+
+.links a:visited {
+    color: #D98F4E;;
+}
+
+.links a:active {
+    color: greenyellow;
+}
+
+.links a:hover {
+    color: black;
+    background-color: rgb(224, 165, 123);
+}
+
