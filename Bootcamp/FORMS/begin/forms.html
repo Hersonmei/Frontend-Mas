@@ -11,13 +11,14 @@
 		<section>
 			<h1>Alien Abduction Order Form</h1>
 			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
-		<form>	
+		<form action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES" method="POST">
+			<input type="hidden" name="send_to" value="herson.me@hotmail.com">	
 			<fieldset>
 				<legend>Your contact information</legend>
 				<label for="name">Your name</label>
-				<input type="text" id="name" name="name">
+				<input type="text" id="name" name="name" placeholder="Your name">
 				<label>Phone number</label>
-				<input type="tel" name="phone" id="phone-number">
+				<input type="tel" name="phone" id="phone" placeholder="Don't forget your area code. ">
 				<label for="email">Email</label>
 				<input type="email" name="email" id="email">
 			</fieldset>
@@ -26,8 +27,8 @@
 			<legend>About your abduction </legend>
 			<label for="date">Requested  date</label>
 			<input type="date" name="date" id="date">
-			<label for="numer-people">How many people would you like abducted?</label>
-			<input type="number" name="numer-people" id="numer-people" min="1">
+			<label for="qty">How many people would you like abducted?</label>
+			<input type="number" name="qty" id="qty" min="1">
 			<p>What type of UFO do you prefer?</p>
 				
 			<label>
@@ -35,7 +36,7 @@
 				Classic oval UFO
 			</label>
 			<label>
-				<input type="radio" name="ufotype" value="starwars">
+				<input type="radio" name="ufotype" value="starwars" checked>
 				Star Wars-style Imperial cruiser
 			</label>
 			<label>
@@ -48,16 +49,25 @@
 			</label>
 
 			<label for="abtype">What type of abduction experience do you want?</label>
-				<select name="abtype">
+				<select name="abtype" id="abtype">
 					<option selected>Select one...</option>
 					<option value="tour">Tour of the solar system</option>
 					<option value="dinner">Alien dinner and discussion</option>
 					<option value="dance">Alien dance lessons</option>
-					<option value="watching">Whale watching</option>
+					<option value="whales">Whale watching</option>
 				</select>
-			</fieldset>
-			<p>Special requests:</p>
-			<p>Add me to your email list</p>
+			
+			<label for="comments">Special requests:</label>
+			<textarea id="comments" name="comments" placeholder="Tell me everything.."></textarea>
+			<br>
+
+
+			<label for="subscribe">	
+			<input type="checkbox" name="subscribe" value="subscribe" id="subscribe" checked>
+			Add me to your email list!
+			</label>
+			</fieldset>		
+			<button type="submit">Order your abduction experience!</button>
 		</form>					
 		</section>
 		<aside>
@@ -70,6 +80,7 @@
 			</address>
 		</aside>
 	</div>
+	<script src="js/forms.js"></script>
 </body>
 </html>
 
