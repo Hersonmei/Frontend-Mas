@@ -90,3 +90,26 @@ div:after {
     background-color: rgb(224, 165, 123);
 }
 
+fieldset:not([img]) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+form p {
+    margin: 2px;
+}
+
+input, textarea {
+    padding-right: 6rem;
+}
+
+textarea {
+    padding-bottom: 10rem;
+}
+
+img {
+    width: 40%;
+    
+}
