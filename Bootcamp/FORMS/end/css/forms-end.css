@@ -77,7 +77,9 @@ button:hover {
 }
 
 
-
+form {
+	border: 1px solid black;
+}
 
 
 

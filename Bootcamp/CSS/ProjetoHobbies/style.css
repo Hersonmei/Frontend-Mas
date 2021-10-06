@@ -1,6 +1,10 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #D9D9D9;
+}
+
+h1, h2 {
+    font-family: 'Architects Daughter', cursive;
 }
 
 .menu{
@@ -90,26 +94,52 @@ div:after {
     background-color: rgb(224, 165, 123);
 }
 
-fieldset:not([img]) {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
+fieldset {
+    display: inline;
+    padding-right: 12rem;
+    background-color: rgb(255, 248, 236);
 }
 
-form p {
-    margin: 2px;
+legend {
+    font-weight: bold;
+    font-size: 1.3rem;
 }
-
-input, textarea {
+textarea, input:not([name="sexo"]) {
     padding-right: 6rem;
+    display: block;
+    margin: 1rem 0;
+    
 }
 
 textarea {
     padding-bottom: 10rem;
+    
 }
 
-img {
-    width: 40%;
+.mapa {
+    float: right;
     
+}
+
+
+button {
+    display: block;
+    
+}
+
+.endereco {
+    float: right;
+    margin-top: -2rem;
+
+}
+
+form:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form {
+    background-color: #bacece;
+
 }
