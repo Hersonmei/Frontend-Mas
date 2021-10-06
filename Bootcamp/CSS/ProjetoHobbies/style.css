@@ -1,6 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #D9D9D9;
+    
 }
 
 h1, h2 {
@@ -94,21 +95,35 @@ div:after {
     background-color: rgb(224, 165, 123);
 }
 
+section {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-around;
+    gap: 30px;
+    
+
+}
+
 fieldset {
     display: inline;
     padding-right: 12rem;
     background-color: rgb(255, 248, 236);
+    
 }
 
 legend {
     font-weight: bold;
     font-size: 1.3rem;
+    
 }
 textarea, input:not([name="sexo"]) {
-    padding-right: 6rem;
     display: block;
-    margin: 1rem 0;
-    
+	margin-bottom: 2rem;
+	width: 20rem;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	border-radius: 10px;
+	padding: 0 1rem;
 }
 
 textarea {
@@ -116,28 +131,21 @@ textarea {
     
 }
 
-.mapa {
-    float: right;
+
+aside {
+    flex-basis: 50%;
+    width: 70%;
     
 }
-
 
 button {
     display: block;
     
 }
 
-.endereco {
-    float: right;
-    margin-top: -2rem;
 
-}
 
-form:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 form {
     background-color: #bacece;
