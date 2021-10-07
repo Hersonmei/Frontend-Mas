@@ -1,7 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #D9D9D9;
-    
 }
 
 h1, h2 {
@@ -27,8 +26,7 @@ h1, h2 {
     font-size: 1.2rem;
     padding: 8px;
     text-decoration: none;
-    padding: 14px 16px;
-    
+    padding: 14px 16px;    
 }
 
 .menu a:hover {
@@ -45,7 +43,13 @@ h1 {
 h2 {
     color: #9c5750;
     text-transform: capitalize ;
+}
 
+
+.img-citacao {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
 }
 
 .citacao-1{
@@ -61,15 +65,13 @@ h2 {
     font-size: 1.2rem;
     border-radius: 5px;
     border: dotted 2px;
-    padding: 3px;
-    float: right;
     
 }
 img {
     width: auto;
     height: 400px;
-    float: left;
 }
+
 
 div:after {
     content: "";
@@ -100,8 +102,6 @@ section {
     flex-direction: row nowrap;
     justify-content: space-around;
     gap: 30px;
-    
-
 }
 
 fieldset {
@@ -128,26 +128,19 @@ textarea, input:not([name="sexo"]) {
 
 textarea {
     padding-bottom: 10rem;
-    
 }
 
 
 aside {
     flex-basis: 50%;
     width: 70%;
-    
 }
 
 button {
     display: block;
-    
 }
-
-
-
 
 
 form {
     background-color: #bacece;
-
 }
