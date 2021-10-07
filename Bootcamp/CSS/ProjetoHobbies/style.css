@@ -65,8 +65,10 @@ h2 {
     font-size: 1.2rem;
     border-radius: 5px;
     border: dotted 2px;
-    
+    padding: 3px;
+    height: 7rem;
 }
+
 img {
     width: auto;
     height: 400px;
