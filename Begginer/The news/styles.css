@@ -1,0 +1,73 @@
+body {
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic ;
+    font-size: 30px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: row;
+   
+
+}
+
+.section1 div {
+    
+}
+
+
+.section2 {
+    display: flex;
+    flex-direction: row;
+    
+} 
+
+div {
+    flex-basis: 32.3%;
+    border: 0.5px black solid;
+}
+
+.section2 .div2 {
+    
+    flex-basis: 68%;
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    border: 3px dotted blue;
+    list-style: none;
+    padding-left: 0; 
+
+}
+
+li {
+    font-size: 2rem; 
+    font-weight: bold;
+    padding: 20px;
+}
+
+.color1 {
+    background-color: #FDEBAF;
+}
+
+.color2 {
+    background-color: #81ECEC;
+}
+.color3 {
+    background-color: #55EFC4;
+}
+.color4 {
+    background-color: #74B9FF;
+}
+.color5 {
+    background-color: #A29BFE;
+}
