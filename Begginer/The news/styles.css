@@ -35,6 +35,11 @@ img {
     width: 50%;
 }
 
+.div1 {
+    width: 25%;
+}
+
+
 .section2 {
     display: flex;
     flex-direction: row;
@@ -42,9 +47,8 @@ img {
 } 
 
 div:not(.div2) {
-    flex-basis: 32.3%;
     border: 0.5px black solid;
-    padding: 0 20px 0 20px;
+
 }
 
 .section2 .div2 {
