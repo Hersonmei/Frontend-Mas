@@ -1,8 +1,11 @@
-let maximun = parseInt (prompt('Enter the maximun number!'))
-while(!maximun) {
-    maximun = parseInt(prompt("Enter a valid number!"))
+const testScores = {
+    herson: 95,
+    ivson: 100,
+    renan: 95,
+    madja: 100,
+    alex: 95
 }
 
-const targetNum = Math.floor(Math.random() * maximun) + 1
-
-console.log(targetNum);
+for (let person in testScores) {
+    console.log(person);
+}
