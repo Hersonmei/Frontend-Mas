@@ -1,10 +1,8 @@
-let number = Math.floor(Math.random() * 2);
-
-let guess = prompt('Escolhe um número de 1 a 3');
-
-while (guess !== number) {
-    guess = prompt("Ainda não acertou")
-    if (guess === number) break;
+let maximun = parseInt (prompt('Enter the maximun number!'))
+while(!maximun) {
+    maximun = parseInt(prompt("Enter a valid number!"))
 }
 
-console.log("Parabéns! Você acertou!");
+const targetNum = Math.floor(Math.random() * maximun) + 1
+
+console.log(targetNum);
