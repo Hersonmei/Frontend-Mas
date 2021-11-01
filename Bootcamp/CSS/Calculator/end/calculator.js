@@ -4,7 +4,7 @@ let previusOperator;
 const screen = document.querySelector('.screen');
 
 function buttonClick(value) {
-    if (isNaN(parteInt(value))){
+    if (isNaN(parseInt(value))){
         //this is not a number
         handleSymbol(value);
     } else {
@@ -18,11 +18,11 @@ function handleNumber(value){
     if (buffer === "0") {
         buffer = value;
     } else {
-        buffer = buffer + value;
+        buffer += value;
     }
 }
 
-function handleMath (symbol) {
+function handleMath (value) {
     if (buffer === '0') {
         // do nothig
         return;
@@ -36,12 +36,12 @@ function handleMath (symbol) {
         flushOperation(intBuffer);
     }
 
-    previusOperator = symbol;
+    previusOperator = value;
 
     buffer = '0';
 }
 
-function flushOperation () {
+function flushOperation (intBuffer) {
     if (previusOperator  === "+") {
         runningTotal += intBuffer;
     } else if (previusOperator === "-"){
@@ -57,7 +57,7 @@ function handleSymbol(value){
     switch (value) {
         case 'C':
             buffer = '0';
-            runningTotal = '0';
+            runningTotal = 0;
             break;
         case "=":
             if (previusOperator === null){
@@ -66,7 +66,7 @@ function handleSymbol(value){
             }
             flushOperation(parseInt(buffer));
             previusOperator = null;
-            buffer = + runningTotal;
+            buffer = +runningTotal;
             runningTotal = 0;
             break;
         case "←":
@@ -90,9 +90,8 @@ function rerender(){
 }
 
 function init () {
-    document
-    .querySelector('.calc-buttons')
-    .addEventListener('click', function(event){
+    document.querySelector('.calc-buttons')
+    document.addEventListener('click', function(event){
         buttonClick(event.target.innerText);
 })
 }
