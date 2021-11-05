@@ -20,7 +20,6 @@ body {
 }
 
 .panel {
-  /* Pq esse inline-flex fex toda essa diferença? */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,7 +42,7 @@ body {
   opacity: 0;
 }
 
-/* Pq .panel.panel?? */
+
 .panel.active {
   flex: 5;
 }
