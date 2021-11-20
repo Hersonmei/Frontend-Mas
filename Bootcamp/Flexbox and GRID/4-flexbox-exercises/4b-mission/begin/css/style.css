@@ -164,10 +164,16 @@ figcaption a {
 }
 
 @media (min-width: 800px) {
-  /* .logoText img {
-        width: 50%;
-        height: 100%;
-    } */
+  .logoText {
+    display: flex;
+    gap: 3%;
+  }
+  .logoText img {
+    min-width: 32%;
+    height: 30%;
+  }
+
+  
 
   section h2 {
     margin-left: 100px;
