@@ -48,10 +48,12 @@ async function getQuotes(){
     try{
         const response = await fetch(apiUrl)
         apiQuotes = await response.json()
+        console.log(response);
         newQuote()
     } catch(error){
          // Catch Error Here
     }
+}
 
     // Tweet Quote
     function tweetQuote(){
@@ -65,5 +67,4 @@ async function getQuotes(){
 
     // On Load
     getQuotes();
-}
 
